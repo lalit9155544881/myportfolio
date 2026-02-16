@@ -1,0 +1,154 @@
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 1rem 1.25rem 3rem;
+  color: #f0f5ff;
+  background:
+    radial-gradient(circle at 15% 15%, #27386d 0%, transparent 38%),
+    radial-gradient(circle at 85% 25%, #4c2367 0%, transparent 35%),
+    linear-gradient(135deg, #0d1635 0%, #070b1b 100%);
+}
+
+.bg-glow {
+  position: absolute;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 50%;
+  filter: blur(54px);
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.bg-glow-one {
+  top: -11rem;
+  left: -10rem;
+  background: #2b8dff;
+}
+
+.bg-glow-two {
+  right: -10rem;
+  bottom: -9rem;
+  background: #e84bf8;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #3a4974;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  background: rgba(17, 25, 56, 0.65);
+}
+
+.brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #d3deff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  padding: 5rem 0 3rem;
+}
+
+.intro-kicker {
+  margin: 0;
+  font-size: 0.86rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9dc7ff;
+  font-weight: 700;
+}
+
+.intro-title {
+  margin: 0.7rem 0 0;
+  max-width: 16ch;
+  font-size: clamp(2rem, 8vw, 4.2rem);
+  line-height: 1.06;
+}
+
+.intro-text {
+  margin-top: 1rem;
+  max-width: 60ch;
+  color: #c6d4f8;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.intro-cta {
+  margin-top: 1.8rem;
+  display: inline-block;
+  padding: 0.72rem 1.35rem;
+  border-radius: 10px;
+  color: #0b1533;
+  background: #8fd1ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.info-section {
+  margin-top: 1.2rem;
+  padding: 1.3rem 1.2rem;
+  border-radius: 14px;
+  border: 1px solid #384975;
+  background: rgba(17, 25, 56, 0.62);
+}
+
+.info-section h2 {
+  margin: 0;
+}
+
+.info-section p {
+  margin-top: 0.65rem;
+  color: #c9d7fc;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .intro {
+    padding-top: 3.5rem;
+  }
+}
